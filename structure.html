@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
         <script src="https://kit.fontawesome.com/c32dd67fcb.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width" />
 
         <title> Reservia </title>
     </head>
@@ -15,15 +16,17 @@
             <img class="headerlogo" src="Reservia@3x.png" alt="Logo Reservia"/>
 
    <nav id="nav_en_tete">
-         <a class="lien_nav_en_tete" href="#">Hébergements</a>
-         <a class="lien_en_tete" href="#">Activités</a>
-         <a class="lien_nav_en_tete" href="#">S'inscrire</a>
+    <ul>
+      <li>   <a class="lien_nav_en_tete" href="#">Hébergements</a></li>
+       <li>  <a class="lien_en_tete" href="#">Activités</a></li>
+        <li> <a class="lien_nav_en_tete" href="#">S'inscrire</a></li>
+        </ul>
    </nav>
 </header>
    <!--HEADER-->
 
     <!--MAIN-->
-   <main >
+   <main>
        <!--SEARCH & HEADER bis -->
        <section class="search">
            <header class="searchHeader">
@@ -39,7 +42,6 @@
              <input class="search_input" type="search" placeholder="Marseille, France" size="1">
             <button class="search_button">
                 <span class="search_button_Text"> Rechercher</span>
-                <i class="search_button_icon fas fa-search"></i>
             </button>
          </form>
     <div class="Filtres">
@@ -260,6 +262,7 @@
     <!--ACTIVITES-->
         <section class="activités" id="activités">
             <h2 class="activités_titre">Activités à Marseille</h2>
+            
             <a href="#" class="activités_lien activités_lien1">
                 <div class="activités_contenu">
                     <img class="activités_img" src="activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="le vieux port">
@@ -296,26 +299,27 @@
                 </div>
                 <h3 class="activités_noms">Parc Longchamp</h3>
             </a>
+            </section>
          </main> 
         <footer>
             <section class="footer">
-                <div id="a_propos">
-          <h1>A propos</h1>
+                <div class="a_propos">
+          <h1 class="footer_titre">A propos</h1>
           <ul>
          <li> <a href="#">Fonctionnement du site</a> </li> 
          <li>  <a href="#"> Condition générales de vente</a> </li> 
          <li> <a href="#"> Données et confidentialité</a></li> 
         </ul>
         </div>
-        <div id="nos_hebergements">
-          <h1> Nos hébérgement</h1> 
+        <div class="nos_hebergements">
+          <h1 class="footer_titre"> Nos hébérgement</h1> 
           <ul>
          <li> <a href="#"> Chartes de qualité </a></li>
           <li> <a href="#">Soumettre votre hôtel</a></li>
         </ul>
         </div>
-        <div id="assistance">
-          <h1> Assistance</h1>
+        <div class="assistance">
+          <h1 class="footer_titre"> Assistance</h1>
           <ul>
          <li>  <a href="#">Centre d'aide</a></li>
         <li>   <a href="#">Nous contacter </a></li>
@@ -323,6 +327,6 @@
         </div>
         </section>
         </footer>
-  </div>
+
     </body>
 </html>

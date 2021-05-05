@@ -10,10 +10,10 @@ body
     padding:1%;
     width: 95%;
     margin: 0;
-    background: color white;
+    background-color:  white;
     white-space:normal ;
     font-family:"Raleway",sans-serif;
-    src: url('Raleway-Regular.ttf') format('truetype');
+    src: url('Raleway-Regular.ttf') format('truetype')
 }
 a
 {
@@ -22,8 +22,8 @@ a
 }
 .header
 {
-   display:grid;
-   align-items: center;
+   display:flex;
+   text-align: right;
    max-width: 1440px;
    margin: auto;
 }
@@ -33,50 +33,48 @@ a
     padding: 1rem 3.2rem;
     height: 2.813rem;
   }
+nav 
+{
+    display: inline-block;
+    width:100%;
+    height: 80%;
+}
+nav ul 
+{
+    list-style-type: none;
+}
+nav li 
+{
+    display: inline-block;
+    margin-right: 0%;
+}
 .nav_en_tete
 {
-    display: flex;
-    text-decoration: none;
-    grid-area: barrenav;
-    /* PROBLEME : Mettre nav_en_tête tout à droite*/
-    
+    text-align: right;
+    padding: 10rem;
 }
 .lien_nav_en_tete
 {
-    
-    padding: 2rem;
-    font-weight: 700;
-     text-decoration: none;
-    transition-duration: 0.1s;
-    border-top: 3px transparent solid;
     color: #0065fc;
-    border-top: 2px solid #0065fc;
+    font-weight: 800;
 }
-.lien_nav_en_tete :hover
+.nav_en_tete a
 {
-    color: #0065fc;
-    border-top: 3px solid #0065fc;
-    font-weight: bold;
-}
-.lien_en_tete
-{
-    display: flex;
+    font-size: 100%;
+    padding-bottom: 100%;
     text-decoration: none;
-    grid-area: boutton;
-    padding: 2rem;
-    color: black;
-    font-weight: 450;
+    
 }
 @media screen and (min-width: 602px) {
     .header {
         grid-template-columns: auto 1fr auto auto;
         grid-template-areas: "logo barrenav boutton";
     } 
-    .lien_nav_en_tete , .lien_en_tete {
+    .lien_nav_en_tete  {
         border-top: 3px solid #0065fc;
     }
 }
-@media screen and (max-width:600px ) {
+@media screen and (max-width:750px ) {
     .header {
     grid-template-columns: auto 1fr auto auto;
     grid-template-areas: "logo boutton" "barrenav barrenav barrenav";
@@ -94,6 +92,7 @@ a
         border-top: none;
         border-bottom: 3px solid #F2F2F2;
         width: 50%;
+        flex-wrap: wrap;
     }
     .lien_nav_en_tete:hover{
         border-bottom: 3px #0065fc solid;
@@ -129,6 +128,7 @@ margin-bottom: 0.5rem;
     background-color: #f2f2f2;
     padding:1rem 1rem 1rem 1rem ;
     text-align: center;
+    border-radius: 1rem 0 0 1rem;
 }
 .Icon_icon_gps
 {
@@ -147,7 +147,7 @@ margin-bottom: 0.5rem;
     font-size: 1rem;
     font-weight: bold;
 }
-.search_input:placeholder
+.search_input::placeholder
 {
     font-size: 1rem;
     color: black;
@@ -238,7 +238,7 @@ margin-bottom: 0.5rem;
 {
     color: #0065fc;
 }
-.info_recherch_Text
+.info_recherche_Text
 {
     margin: 0;
 }
@@ -278,7 +278,7 @@ margin-right: 1rem;
 {
     background-color: #F2F2F2;
     border-radius:10px;
-    padding: 1rem;
+    padding: 3rem;
 }
 .hebergements
 {
@@ -305,7 +305,7 @@ margin-right: 1rem;
     background-color: white;
     padding: 0.375rem;
     border-radius:10px;
-    box-shadow: 0 0 16px black;
+    box-shadow: 0 0 10px black;
     transition-duration: 0.1s;
     cursor: pointer;
     box-sizing: border-box;
@@ -332,6 +332,10 @@ margin-right: 1rem;
 margin: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
 .host_note
+{
+    margin: 0 0.75rem 0.25rem 0.75rem;
+}
+.host_description
 {
     margin: 0 0.75rem 0.25rem 0.75rem;
 }
@@ -394,7 +398,7 @@ margin: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
 .populaire_article , .host_article
 {
-    height: 8.75;
+    height:100%;
 }
 @media screen and(max-width : 1440px) {
     .hebergements{
@@ -407,9 +411,9 @@ margin: 0.25rem 0.75rem 0.25rem 0.75rem;
         column-gap: 2rem;
         grid-row-start: 1;
     }
-    .populaire_titre{
-        grid-column:1/-1;
-    }
+    .populaire_titre{ 
+        grid-column:1/-1;  
+    } 
 }
 @media screen and (min-width : 925px) {
     .host{
@@ -439,7 +443,7 @@ margin: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
 .activités_lien
 {
-    box-shadow:0 0 20px black;
+    box-shadow:0 0 10px black;
     border-radius: 2rem;
    overflow:hidden;
     display: flex;
@@ -466,7 +470,7 @@ transform: scale(1);
 }
 .activités_noms
 {
-    margin:1.3rem 2rem;
+    margin: 2rem 1rem 2rem 1rem
 }
 @media (min-width: 1100px){
     .activités{
@@ -521,13 +525,16 @@ transform: scale(1);
 }
 .footer
 {
-    box-shadow: 6px 6px 10px rgba(128,128,128,0.2);
-    background-color: rgba(128,128,128,0.2);
-    padding:0.1% ;
-    justify-content: space-around;
+    max-width: 1350px;
+    padding: 48px 20px 51px 50px;
+    background-color: #F2F2F2;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
 }
 .footer ul
 {
     list-style-type: none;
+    padding: 0.1%;
 }
