@@ -9,7 +9,6 @@ body
 {
     padding:1%;
     width: 95%;
-    margin: 0;
     background-color:  white;
     white-space:normal ;
     font-family:"Raleway",sans-serif;
@@ -30,7 +29,7 @@ a
 .headerlogo
 {
     grid-area: logo ;
-    padding: 1rem 3.2rem;
+    padding: 1rem 2rem;
     height: 2.813rem;
   }
 nav 
@@ -51,9 +50,9 @@ nav li
 .nav_en_tete
 {
     text-align: right;
-    padding: 10rem;
 }
-.lien_nav_en_tete
+
+.lien_nav_en_tete, .lien_nav_signup
 {
     color: #0065fc;
     font-weight: 800;
@@ -63,7 +62,12 @@ nav li
     font-size: 100%;
     padding-bottom: 100%;
     text-decoration: none;
+
     
+}
+.lien_nav_en_tete, .lien_en_tete, .lien_nav_signup
+{ 
+    padding: 2rem;
 }
 @media screen and (min-width: 602px) {
     .header {
@@ -71,7 +75,7 @@ nav li
         grid-template-areas: "logo barrenav boutton";
     } 
     .lien_nav_en_tete  {
-        border-top: 3px solid #0065fc;
+        border-top: 2px solid #0065fc;
     }
 }
 @media screen and (max-width:750px ) {
@@ -93,9 +97,6 @@ nav li
         border-bottom: 3px solid #F2F2F2;
         width: 50%;
         flex-wrap: wrap;
-    }
-    .lien_nav_en_tete:hover{
-        border-bottom: 3px #0065fc solid;
     }
 }
 main
@@ -278,7 +279,7 @@ margin-right: 1rem;
 {
     background-color: #F2F2F2;
     border-radius:10px;
-    padding: 3rem;
+    padding: 4rem;
 }
 .hebergements
 {
@@ -443,10 +444,10 @@ margin: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
 .activités_lien
 {
-    box-shadow:0 0 10px black;
+    box-shadow:0 0 5px black;
     border-radius: 2rem;
    overflow:hidden;
-    display: flex;
+    display:flex;
     flex-direction: column;
     transition-duration: 0.1s;
 }
@@ -468,9 +469,35 @@ transform: scale(1);
     max-width:100%;
     border-radius: 1rem 1rem 0 0 ;
 }
+.activités_img_medium
+{
+height: 230px;;
+max-height:230px;
+width:100%;
+max-width:100%;
+object-fit: cover;
+border-radius: 1rem 1rem 0 0;
+}
+.activités_img_small
+{
+height:150px;
+max-height: 150px;
+width:100%;
+max-width:100%;
+object-fit: cover;
+border-radius: 1rem 1rem 0 0;
+}
 .activités_noms
 {
-    margin: 2rem 1rem 2rem 1rem
+    margin: 2rem 1rem 2rem 1rem;
+}
+.activités_noms_medium
+{
+margin: 1rem 3rem 3rem 1rem;
+}
+.activités_noms_small
+{
+margin:1rem 3rem 3rem 1rem;
 }
 @media (min-width: 1100px){
     .activités{
@@ -530,11 +557,18 @@ transform: scale(1);
     background-color: #F2F2F2;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:space-between;
     flex-direction: row;
+}
+.footer h1
+{
+    margin:1rem 2.7rem 1rem 2.7rem;
 }
 .footer ul
 {
     list-style-type: none;
-    padding: 0.1%;
+}
+.footer li
+{
+    padding: 5px;
 }
