@@ -1,3 +1,4 @@
+
 @font-face {
     font-family:"Raleway",sans-serif;
     src: url('Raleway-Regular.ttf') format('truetype');
@@ -275,6 +276,11 @@ margin-right: 1rem;
         display: none;
     }
 }
+@media (max-width:767px) {
+    .populaire{
+        grid-row-start:1;
+    }
+}
 .host , .populaire
 {
     background-color: #F2F2F2;
@@ -292,6 +298,7 @@ margin-right: 1rem;
     display: grid;
     column-gap: 2rem;
     row-gap: 2rem;
+    
 }
 .host_en_tete
 {
@@ -410,7 +417,6 @@ margin: 0.25rem 0.75rem 0.25rem 0.75rem;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto 10rem;
         column-gap: 2rem;
-        grid-row-start: 1;
     }
     .populaire_titre{ 
         grid-column:1/-1;  
