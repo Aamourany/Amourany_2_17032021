@@ -8,8 +8,6 @@
 
 body
 {
-    padding:1%;
-    width: 95%;
     background-color:  white;
     white-space:normal ;
     font-family:"Raleway",sans-serif;
@@ -27,7 +25,7 @@ a
    max-width: 1440px;
    margin: auto;
 }
-.headerlogo
+.header_logo
 {
     grid-area: logo ;
     padding: 1rem 2rem;
@@ -84,7 +82,7 @@ nav li
     grid-template-columns: auto 1fr auto auto;
     grid-template-areas: "logo boutton" "barrenav barrenav barrenav";
     }
-    .headerlogo{
+    .header_logo{
         order: 0;
     }
     .lien_en_tete{
@@ -111,11 +109,11 @@ main
     padding: 0 2rem;
     box-sizing: border-box; 
 }
-.searchHeaderTitre
+.search_header_titre
 {
 margin-bottom: 0.5rem;
 }
-.searchHeaderSousTitre
+.search_header_sous_titre
 {
     margin-top: 0;
 }
@@ -241,7 +239,7 @@ margin-bottom: 0.5rem;
 {
     color: #0065fc;
 }
-.info_recherche_Text
+.info_recherche_text
 {
     margin: 0;
 }
@@ -253,7 +251,7 @@ margin-bottom: 0.5rem;
     .search_input{
 flex: 1;
     }
-    .search_button_Text{
+    .search_button_text{
 display: none;
     }
     .search_button_icon{
@@ -270,7 +268,7 @@ margin-right: 1rem;
     
 }
 @media screen and (min-width:601px) {
-    .search_button_Text{
+    .search_button_text{
         display: block;
     }
     .search_button_icon{
@@ -324,7 +322,7 @@ margin-right: 1rem;
     background-color: white;
     padding: 0.375rem;
     border-radius:10px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 5px black;
     transition-duration: 0.1s;
     cursor: pointer;
     box-sizing: border-box;
@@ -349,6 +347,7 @@ margin-right: 1rem;
 .host_figcaption_titre
 {
 margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+font-size: 1rem;
 }
 .host_note
 {
@@ -402,7 +401,7 @@ margin: 0.25rem 0.75rem 0.25rem 0.75rem;
     min-width: 33%;
     max-width:33%;
 }
-.populaire_img_Img
+.populaire_img_img
 {
     border-radius: 1rem 0 0 1rem;
     position: absolute;
@@ -453,18 +452,18 @@ margin: 0.25rem 0.75rem 0.25rem 0.75rem;
         grid-template-rows: auto repeat(3, 9rem);
     }
 }
-.activités
+.activites
 {
     height: auto;
     display:grid;
-    margin:4rem 0;
+    margin:4rem 0 6rem;
     column-gap: 2rem;
 }
-.activités_titre
+.activites_titre
 {
     grid-column: 1/-1;
 }
-.activités_lien
+.activites_lien
 {
     box-shadow:0 0 5px black;
     border-radius: 2rem;
@@ -476,16 +475,16 @@ margin: 0.25rem 0.75rem 0.25rem 0.75rem;
     height: 100%;
     box-sizing: border-box;
 }
-.activités_lien:hover
+.activites_lien:hover
 {
 transform: scale(1);
 }
-.activités_contenu
+.activites_contenu
 {
     position: relative;
     flex: 1;
 }
-.activités_img
+.activites_img
 {
     height: 100%;
     max-height: 100%;
@@ -494,7 +493,7 @@ transform: scale(1);
     max-width:100%;
     border-radius: 1rem 1rem 0 0 ;
 }
-.activités_img_medium
+.activites_img_medium
 {
 height: 285px;;
 max-height:285px;
@@ -503,7 +502,7 @@ max-width:100%;
 object-fit: cover;
 border-radius: 1rem 1rem 0 0;
 }
-.activités_img_small
+.activites_img_small
 {
 height:150px;
 max-height: 150px;
@@ -512,14 +511,14 @@ max-width:100%;
 object-fit: cover;
 border-radius: 1rem 1rem 0 0;
 }
-.activités_noms
+.activites_noms
 {
     height: 40px;
     font-weight: bold;
     margin: auto 30px;
     padding: 10px;
 }
-.activités_second, .activités_fourth
+.activites_second, .activites_fourth
 {
     height: 600px;
     display:grid;
@@ -528,35 +527,35 @@ border-radius: 1rem 1rem 0 0;
    row-gap:1rem;
 }
 @media (min-width: 991px){
-    .activités{
+    .activites{
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
     }
-    .activités_lien1{
+    .activites_lien1{
         grid-row: 2/7;
         grid-column: 1/2;
       }
-      .activités_lien2 {
+      .activites_lien2 {
         grid-column: 2/3;
         grid-row: 2/5;
       }
-      .activités_lien3 {
+      .activites_lien3 {
         grid-column: 2/3;
         grid-row: 6/7;
       }
-      .activités_lien4 {
+      .activites_lien4 {
         grid-column: 3/4;
         grid-row: 2/7;
       }
-      .activités_lien5 {
+      .activites_lien5 {
         grid-column: 4/5;
         grid-row: 2/3;
       }
-      .activités_lien6 {
+      .activites_lien6 {
         grid-column: 4/5;
         grid-row: 4/7;
       }
-      .activités_first, .activités_third 
+      .activites_first, .activites_third 
       {
           border-radius: 20px 20px 20px 20px;
           width: 100%;
@@ -565,13 +564,13 @@ border-radius: 1rem 1rem 0 0;
       }
 }
 @media (min-width:651) and (max-width:990px){
-    .activités{
+    .activites{
         row-gap: 2rem;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: auto 12rem 12rem;
         
     }
-    .activités_second, .activités_fourth{
+    .activites_second, .activites_fourth{
         height:auto; 
    display: grid;
    grid-template-rows: none;
@@ -580,7 +579,11 @@ border-radius: 1rem 1rem 0 0;
     }
 }
 @media (max-width:650px){
-.activités{
+    .host_article {
+width: 250px;
+    }
+
+.activites{
     display: flex;
     flex-wrap: wrap;
     width:fit-content;
@@ -588,7 +591,7 @@ border-radius: 1rem 1rem 0 0;
     margin: 1rem;
        
 }
-.activités_img {
+.activites_img {
         height: 40%;
         max-height: 40%;
         object-fit: cover;
@@ -596,7 +599,7 @@ border-radius: 1rem 1rem 0 0;
         max-width:100%;
         border-radius: 1rem 1rem 0 0 ;
  }
-.activités_img_medium
+.activites_img_medium
 {
     height: 150px;;
     max-height:150px;
@@ -605,7 +608,7 @@ border-radius: 1rem 1rem 0 0;
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
 }
-.activités_img_small
+.activites_img_small
 {
     height:150px;
     max-height: 150px;
@@ -614,33 +617,33 @@ border-radius: 1rem 1rem 0 0;
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
 }
-.activités_lien
+.activites_lien
 {
     box-sizing: border-box;
     width:auto;
     height: fit-content;
     
 }
-.activités_second, .activités_fourth{
+.activites_second, .activites_fourth{
    height:auto; 
    display: grid;
    grid-template-rows: none;
    margin:8px;
    row-gap:1rem;
 }
-.activités_first, .activités_third{
+.activites_first, .activites_third{
     margin:8px;
 }
 }
 @media (min-width:651px) and (max-width:991px) {
-.activités{
+.activites{
     display: grid;
     grid-template-columns: repeat(2,2fr);
     row-gap:1rem;
 }   
 }
 @media (min-width:992px) and (max-width:1100px) {
-    .activités{
+    .activites{
         display: grid;
         row-gap:1rem;
     }   
