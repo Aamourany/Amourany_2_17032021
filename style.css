@@ -10,6 +10,7 @@ body
 {
     background-color:  white;
     white-space:normal ;
+    margin:0; 
     font-family:"Raleway",sans-serif;
     src: url('Raleway-Regular.ttf') format('truetype')
 }
@@ -44,6 +45,7 @@ nav
 }
 nav ul 
 {
+    margin:0;
     list-style-type: none;
 }
 nav li 
@@ -80,7 +82,7 @@ nav li
 }
 .lien_nav_en_tete, .lien_en_tete, .lien_nav_signup
 { 
-  padding-top: 40px;
+  padding-top: 30px;
     padding-right: 40px;
     padding-bottom: 8px;
     padding-left: 20px;
@@ -713,7 +715,6 @@ width: 250px;
     }
 .footer
 {
-    max-width: 1400px;
     padding: 48px 20px 51px 50px;
     background-color: #F2F2F2;
     display: flex;
