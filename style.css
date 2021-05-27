@@ -10,11 +10,7 @@ body
 {
     background-color:  white;
     white-space:normal ;
-<<<<<<< HEAD
     margin: 0;
-=======
-    margin:0; 
->>>>>>> 8804056c26e0c763d123cfe47dad0fbc68e03243
     font-family:"Raleway",sans-serif;
     src: url('Raleway-Regular.ttf') format('truetype')
 }
@@ -47,7 +43,6 @@ nav
 }
 nav ul 
 {
-    margin:0;
     list-style-type: none;
 }
 nav li 
@@ -55,7 +50,7 @@ nav li
     display: inline-block;
     margin-right: 0%;
 }
-@media screen and(min-width:500px){
+@media screen and (min-width:500px){
     nav li :hover
 {
     border-top: #0065fc 2px solid;
@@ -90,7 +85,6 @@ nav li
 }
 .lien_nav_en_tete, .lien_en_tete, .lien_nav_signup
 { 
-  padding-top: 30px;
     padding-right: 40px;
     padding-bottom: 8px;
     padding-left: 20px;
@@ -547,7 +541,6 @@ font-size: 1rem;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    align-items: center;
 }
 .activites_lien:hover
 {
