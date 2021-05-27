@@ -10,6 +10,7 @@ body
 {
     background-color:  white;
     white-space:normal ;
+    margin: 0;
     font-family:"Raleway",sans-serif;
     src: url('Raleway-Regular.ttf') format('truetype')
 }
@@ -25,8 +26,6 @@ h1
 .header
 {
     display: flex;
-    text-align: right;
-   max-width: 1440px;
    margin: auto;
 }
 .header_logo
@@ -51,6 +50,15 @@ nav li
     display: inline-block;
     margin-right: 0%;
 }
+@media screen and (min-width:500px){
+    nav li :hover
+{
+    border-top: #0065fc 2px solid;
+    color: #0065fc;
+    font-weight: 900;
+    padding-top: 20px;
+}
+}
 #nav_en_tete
 {
     text-align: right;
@@ -61,26 +69,22 @@ nav li
 }
 .lien_nav_en_tete
 {
-    color: #0065fc;
     font-weight: 400;
 }
 .lien_nav_signup
 {
     color: #0065fc;
-    font-weight: 1000;
+    font-weight: 900;
+    border-top: none;
+    border-bottom: none;
 }
 #nav_en_tete a
 {
     font-size: 100%;
-    padding-bottom: 100%;
     text-decoration: none;   
-}
-.lien_nav_en_tete  {
-    border-top: 2px solid #0065fc;
 }
 .lien_nav_en_tete, .lien_en_tete, .lien_nav_signup
 { 
-  padding-top: 40px;
     padding-right: 40px;
     padding-bottom: 8px;
     padding-left: 20px;
@@ -94,9 +98,6 @@ nav li
         grid-template-columns: auto 1fr auto auto;
         grid-template-areas: "logo barrenav boutton";
     } 
-    .lien_nav_en_tete  {
-        border-top: 2px solid #0065fc;
-    }
 }
 @media screen and (max-width:750px ) {
     .header {
@@ -117,7 +118,13 @@ nav li
         flex-wrap: wrap;
     }
 }
-@media  (max-width: 380px) {
+@media  (max-width: 501px) {
+    nav li :hover
+    {
+        border-bottom: #0065fc 2px solid;
+        color: #0065fc;
+        font-weight: 900;
+    }
     #nav_en_tete{
         display:none;
     }
@@ -127,18 +134,16 @@ nav li
     .header{
         display: inline;
     }
-    .lien_nav_en_tete{
-        border-top: none;
-        border-bottom: 3px solid #0065fc;
-    }
-    .lien_en_tete
+    nav li 
     {
-        border-bottom: 3px solid #f2f2f2;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #f2f2f2;
     }
     .lien_nav_signup{
     margin-left: 95px;
     position: absolute;
     font-weight: bolder;
+
     }
     #lien_signup_mobile{
         display: inline;
@@ -150,8 +155,6 @@ main
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 1440px;
-    margin: auto;
     padding: 0 2rem;
     box-sizing: border-box; 
 }
@@ -243,7 +246,6 @@ margin-bottom: 0.5rem;
 .filtres_recherche:hover
 {
     background-color: #f3f8ff;
-    transform: scale(1.015);
 }
 .icon_filtres_recherche
 {
@@ -387,7 +389,7 @@ margin-right: 1rem;
 }
 .host_article:hover
 {
-    transform: scale(1);
+    transform: scale(1.05);
 }
 .host_figure
 {
@@ -539,10 +541,11 @@ font-size: 1rem;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+    align-items: center;
 }
 .activites_lien:hover
 {
-transform: scale(1);
+transform: scale(1.05);
 }
 .activites_contenu
 {
@@ -714,7 +717,6 @@ width: 250px;
     }
 .footer
 {
-    max-width: 1400px;
     padding: 48px 20px 51px 50px;
     background-color: #F2F2F2;
     display: flex;
