@@ -12,7 +12,6 @@ body
     white-space:normal ;
     margin: 0;
     font-family:"Raleway",sans-serif;
-    src: url('Raleway-Regular.ttf') format('truetype')
 }
 a
 {
@@ -62,6 +61,7 @@ nav li
 #nav_en_tete
 {
     text-align: right;
+    margin-right:1rem;
 }
 #nav_en_tete_mobile
 {
@@ -407,10 +407,6 @@ margin-right: 1rem;
 margin: 0.25rem 0.75rem 0.25rem 0.75rem;
 font-size: 1rem;
 }
-.host_contenu
-{
-    text-align: center;
-}
 .host_note
 {
     margin: 0 0.75rem 0.25rem 0.75rem;
@@ -634,13 +630,7 @@ border-radius: 1rem 1rem 0 0;
           align-content: flex-start;
       }
 }
-@media (min-width:651) and (max-width:990px){
-    .activites{
-        row-gap: 2rem;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: auto 12rem 12rem;
-        
-    }
+@media (min-width:651px) and (max-width:990px){
     .activites_second, .activites_fourth{
         height:auto; 
    display: grid;
