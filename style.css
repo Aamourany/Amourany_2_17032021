@@ -595,7 +595,7 @@ border-radius: 1rem 1rem 0 0;
     display:grid;
     justify-content: space-between;
     grid-template-rows:auto;
-   row-gap:1rem;
+   row-gap:4px;
 }
 @media (min-width: 991px){
     .activites{
