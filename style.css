@@ -484,20 +484,6 @@ font-size: 1rem;
 {
     height:100%;
 }
-@media screen and(max-width : 1440px) {
-    .hebergements{
-        grid-template-columns: 1fr;
-        row-gap: 2rem;
-    }
-    .populaire {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto 10rem;
-        column-gap: 2rem;
-    }
-    .populaire_titre{ 
-        grid-column:1/-1;  
-    } 
-}
 @media screen and (min-width : 925px) {
     .host{
         grid-template-columns: repeat(3, 1fr);
@@ -655,8 +641,6 @@ margin-left:10%;
        
 }
 .activites_img {
-        height: 40%;
-        max-height: 40%;
         object-fit: cover;
         width: 100%;
         max-width:100%;
@@ -683,9 +667,7 @@ margin-left:10%;
 .activites_lien
 {
     box-sizing: border-box;
-    width:auto;
-    height: fit-content;
-    
+    width:auto;  
 }
 .activites_second, .activites_fourth{
    height:auto; 
