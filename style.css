@@ -639,9 +639,6 @@ border-radius: 1rem 1rem 0 0;
     .host_article {
 margin-left:10%;
     }
-.populaire_article{
-    margin-left:30%;
-}
 .activites{
     display: flex;
     flex-wrap: wrap;
