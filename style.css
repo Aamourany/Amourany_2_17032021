@@ -706,6 +706,7 @@ margin-left:10%;
     .host_article{
         margin-left: 5%;
     }
+}
 @media (min-width:400px) and (max-width:649px) {
     .host_article{
         width:350px;
