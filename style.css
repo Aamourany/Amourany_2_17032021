@@ -637,7 +637,6 @@ border-radius: 1rem 1rem 0 0;
 }
 @media (max-width:1000px){
     .host_article {
-width: 250px;
 margin-left:10%;
     }
 .populaire_article{
@@ -705,10 +704,10 @@ margin-left:10%;
     }
 @media (min-width:200px) and (max-width:600px) {
     .populaire_article{
-        margin-left: 0%;
+        margin-left: 5%;
     }
     .host_article{
-        margin-left: 0%;
+        margin-left: 5%;
     }
 @media (min-width:400px) and (max-width:649px) {
     .host_article{
