@@ -87,11 +87,19 @@ nav li
 { 
     padding-top: 20px;
     padding-bottom: 8px;
-    padding-left: 20px;
+    padding-right: 20px;
 }
 #lien_signup_mobile
 {
     display: none;
+}
+@media screen and (max-width:298px) {
+    .lien_nav_en_tete, .lien_en_tete, .lien_nav_signup
+{ 
+    padding-top: 20px;
+    padding-bottom: 8px;
+    padding-right:0;
+}
 }
 @media screen and (min-width: 651px) {
     .header {
@@ -134,6 +142,8 @@ nav li
     {
         padding-bottom: 8px;
         border-bottom: 2px solid #f2f2f2;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .lien_nav_signup{
     margin-left: 95px;
@@ -699,6 +709,20 @@ margin-left:10%;
     }
     .host_article{
         margin-left: 0%;
+    }
+@media (min-width:400px) and (max-width:649px) {
+    .host_article{
+        width:350px;
+    }
+}
+@media (max-width:400px) {
+    .host_article{
+        width:250px;
+    }
+}
+@media (max-width:200px) {
+    .host_article{
+        width:150px;
     }
 }
 .footer
