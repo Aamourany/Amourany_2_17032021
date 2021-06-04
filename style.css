@@ -89,6 +89,9 @@ nav li
     padding-bottom: 8px;
     padding-right: 20px;
 }
+.lien_en_tete{
+    padding-left:20px;
+}
 #lien_signup_mobile
 {
     display: none;
