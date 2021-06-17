@@ -526,6 +526,7 @@ font-size: 1rem;
 {
     grid-column: 1/-1;
     font-weight: 900;
+    text-align: left;
 }
 .activites_lien
 {
@@ -578,9 +579,10 @@ border-radius: 1rem 1rem 0 0;
 .activites_noms
 {
     height: 40px;
-    font-weight: bold;
+    font-weight:900;
     margin: auto 30px;
     padding: 10px;
+    text-align: left;
 }
 .activites_second, .activites_fourth
 {
