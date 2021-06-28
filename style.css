@@ -30,7 +30,7 @@ h1
 .header_logo
 {
     grid-area: logo ;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     height: 2.813rem;
   }
 nav 
@@ -42,13 +42,12 @@ nav
 }
 nav ul 
 {
-    list-style-type: none;
+    list-style-type: none; 
 }
 nav li 
 {
-    display:flex;
-    flex-direction: row;
-    margin-right: 0%;
+    display: inline-block;
+    margin-right:0%;
 }
 @media screen and (min-width:500px){
     nav li :hover
@@ -127,11 +126,22 @@ nav li
     }
 }
 @media  (max-width: 501px) {
+
+    nav ul li 
+    {
+        padding-bottom: 30px;
+        border-bottom: 0.25em solid #f2f2f2;
+        margin: 0;
+        flex-basis: 50%;
+    }
     nav ul li :hover
     {
-        border-bottom: #0065fc 2px solid;
+        border-bottom: 0.25em solid #0065fc;
+        padding-bottom: 30px;
         color: #0065fc;
+        margin: 0;
         font-weight: 900;
+        flex-basis:50%;
     }
     #nav_en_tete{
         display:none;
@@ -142,15 +152,15 @@ nav li
     .header{
         display: inline;
     }
-    nav ul li 
-    {
-        padding-bottom: 30px;
-        border-bottom: 0.25em solid #f2f2f2;
-        margin: 0;
-        flex-basis: 50%;
+    nav ul {
+        display:flex;
+        flex-direction: row;
+        margin-right: 0%;
+        padding-left:1em;
     }
     .lien_nav_signup{
-    margin-left: 95px;
+    margin-left: 13em;
+    margin-top: 0.6em;
     position: absolute;
     font-weight: bolder;
 
