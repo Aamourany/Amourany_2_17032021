@@ -87,7 +87,8 @@ nav li
 { 
     padding-top: 20px;
     padding-bottom: 8px;
-    padding-right: 20px;
+    padding-right:0.5em;
+    padding-left:0.5em;
 }
 .lien_en_tete{
     padding-left:20px;
@@ -127,6 +128,13 @@ nav li
 }
 @media  (max-width: 501px) {
 
+    .lien_nav_en_tete, .lien_en_tete
+{ 
+    padding-top: 20px;
+    padding-bottom: 8px;
+    padding-right: 7em;
+}
+
     nav ul li 
     {
         padding-bottom: 30px;
@@ -139,6 +147,7 @@ nav li
         border-bottom: 0.25em solid #0065fc;
         padding-bottom: 30px;
         color: #0065fc;
+        border-top: none;
         margin: 0;
         font-weight: 900;
         flex-basis:50%;
